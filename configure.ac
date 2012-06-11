@@ -30,6 +30,10 @@ AS_CASE(["$host_cpu"],
     AC_DEFINE([STRESSAPPTEST_CPU_I686],[],
               [Defined if the target CPU is i686])
     ],
+  [*i486*], [
+    AC_DEFINE([STRESSAPPTEST_CPU_I686],[],
+              [Defined if the target CPU is i486])
+    ],
   [*mips*], [
     AC_DEFINE([STRESSAPPTEST_CPU_MIPS],[],
               [Defined if the target CPU is MIPS])
